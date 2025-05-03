@@ -1,0 +1,43 @@
+.about-page {
+    background-color: #121212;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #e91e63;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border-radius: 16px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 20px rgba(233, 30, 99, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(233, 30, 99, 0.4);
+}
+
+.card h2 {
+    color: #ff4081;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li {
+    padding: 6px 0;
+}

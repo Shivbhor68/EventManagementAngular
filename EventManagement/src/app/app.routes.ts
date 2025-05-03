@@ -1,3 +1,31 @@
 import { Routes } from '@angular/router';
+import { EventsComponent } from './events/events.component';
+import { MybookingComponent } from './mybooking/mybooking.component';
+import { ProfileComponent } from './profile/profile.component';
+import { Component } from '@angular/core';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  {
+    path: 'Event',
+    component: EventsComponent,
+  },
+  {
+    path: 'Mybooking',
+    component: MybookingComponent,
+  },
+  {
+    path: 'Profile',
+    component: ProfileComponent,
+  },
+  {
+    path: 'Aboutus',
+    component: AboutusComponent,
+  },
+
+  {
+    path: '**',
+    component: NotfoundComponent,
+  },
+];

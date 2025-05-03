@@ -1,0 +1,51 @@
+<div class="signup-container">
+  <div class="signup-card">
+    <h2>Join Diamond Events</h2>
+    <p class="subheading">Create your account to get started</p>
+
+    <form>
+      <label for="name">Full Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your full name"
+        required
+      />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Create a password"
+        required
+      />
+
+      <label for="confirm-password">Confirm Password:</label>
+      <input
+        type="password"
+        id="confirm-password"
+        name="confirm-password"
+        placeholder="Confirm your password"
+        required
+      />
+
+      <button type="submit" class="signup-btn">Sign Up</button>
+    </form>
+
+    <div class="signin-prompt">
+      <p>Already have an account?</p>
+      <button (click)="gotosignin()" class="signin-btn">Sign In</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+.headerparent{
+    display: flex;
+    height: 100px;
+    background-color: #121212;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerlogo{
+    height: 80px;
+   
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.linkes{
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    color: #e91e63;
+
+}
+
+a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: #e91e63;
+    font-size: large;
+}
+a:hover{
+    color: #ff80ab;
+}
+.active{
+    font-size: larger;
+    font-weight: 900;
+    color: #ff80ab;
+}

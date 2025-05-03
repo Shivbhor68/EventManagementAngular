@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "name": "shiv",
+      "address": "pune",
+      "email": "shivtest@gmail.com",
+      "id": "9b3a"
+    },
+    {
+      "name": "adi",
+      "email": "aditest@gmail.com",
+      "address": "ambhol",
+      "id": "3718"
+    },
+    {
+      "name": "rushi",
+      "address": "pune",
+      "email": "rushitest@gmail.com",
+      "id": "6a92"
+    },
+    {
+      "name": "sunil",
+      "address": "pune",
+      "email": "suniltest@gmail.com",
+      "id": "b148"
+    },
+    {
+      "name": "anil",
+      "address": "pune",
+      "email": "aniltest@gmail.com",
+      "id": "4fb6"
+    },
+    {
+      "id": "c3ba",
+      "name": "sanika",
+      "email": "santest@gmail.com",
+      "address": "pune"
+    },
+    
+    {
+      "id": "1efd",
+      "name": "sunita",
+      "password":"1234",
+      "address": "ambad",
+      "email": "sunita@gmail.com"
+    }
+  ]
+}
