@@ -1,48 +1,79 @@
 {
   "users": [
     {
-      "name": "shiv",
-      "address": "pune",
+      "id": "9b3a",
+      "name": "shivtej bhor",
       "email": "shivtest@gmail.com",
-      "id": "9b3a"
+      "address": "akole",
+      "mobile": " 0987654321",
+      "password": "1234",
+      "userRole": "Diamond Events Client",
+      "preferedeventtype": "Weddings, Corporate Events"
     },
-    {
-      "name": "adi",
-      "email": "aditest@gmail.com",
-      "address": "ambhol",
-      "id": "3718"
-    },
-    {
-      "name": "rushi",
-      "address": "pune",
-      "email": "rushitest@gmail.com",
-      "id": "6a92"
-    },
-    {
-      "name": "sunil",
-      "address": "pune",
-      "email": "suniltest@gmail.com",
-      "id": "b148"
-    },
-    {
-      "name": "anil",
-      "address": "pune",
-      "email": "aniltest@gmail.com",
-      "id": "4fb6"
-    },
-    {
-      "id": "c3ba",
-      "name": "sanika",
-      "email": "santest@gmail.com",
-      "address": "pune"
-    },
-    
     {
       "id": "1efd",
+      "mobile": " 0987654321",
       "name": "sunita",
-      "password":"1234",
+      "password": "1234",
       "address": "ambad",
-      "email": "sunita@gmail.com"
+      "email": "sunita@gmail.com",
+      "preferedeventtype": "Weddings, Corporate Events",
+      "userRole": "Diamond Events Client"
+    },
+    {
+      "id": "3551",
+      "name": "SHIVTEJ BHOR",
+      "email": "shivbhor444@gmail.com",
+      "address": "akole",
+      "mobile": "9545141930",
+      "password": "12345",
+      "preferedeventtype": "weeding"
+    }
+  ],
+  "events": [
+    {
+      "id": "9b3a",
+      "name": "Royal Wedding Expo",
+      "Date": "10 June 2025 ",
+      "place": "Delhi",
+      "about": " Explore the best wedding decorators, planners, and venues in one place have the perfect experience of the royality.",
+      "imgsrc": "https://asset-2.tstatic.net/jabar/foto/bank/images/Grand-Royal-Wedding-Expo-FOTO-ADV-2.jpg"
+    },{
+      "id": "1232",
+      "name": "Corporate Summit 2025",
+      "Date": "18 July 2025 ",
+      "place": "Mumbai",
+      "about": " Join industry leaders for a full day of networking and keynote sessions and you can direcly interact with them.",
+      "imgsrc": "https://tse3.mm.bing.net/th/id/OIP.C2cj722OYkcXggFXb1jnCQHaE8?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": "1223",
+      "name": "Cultural festival 2025",
+      "Date": "20 July 2025 ",
+      "place": "pune",
+      "about": " Holi is a sacred ancient tradition of Hindus, a holiday in many states of India with regional holidays in other countries.",
+      "imgsrc": "https://media.cntraveller.com/photos/63fdf5557b4cdb0e8f4adab9/16:9/w_2560,c_limit/GettyImages-1359478157.jpeg"
+    }
+  ],
+  "bookings":[
+    { "userid":"1efd",
+      "eventName":"Mehta Wedding",
+      "date":"20 June 2025",
+      "place":"Grand Hyatt, Pune",
+      "status":"Confirmed"
+    
+    },{ "userid":"9b3a",
+      "eventName":"aditya weding",
+      "date":"25 June 2025",
+      "place":"taj mumbai",
+      "status":"Confirmed"
+    
+    },{ "userid":"1efd",
+      "eventName":"Corporate meeting ",
+      "date":"21 June 2025",
+      "place":"Grand Hyatt, delhi",
+      "status":"Confirmed"
+    
     }
   ]
 }
