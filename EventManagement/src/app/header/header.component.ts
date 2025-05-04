@@ -1,10 +1,30 @@
-import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { NgIf } from '@angular/common';
+import { Component, Input } from '@angular/core';
+import {
+  ActivatedRoute,
+  Router,
+  RouterLink,
+  RouterLinkActive,
+  RouterOutlet,
+} from '@angular/router';
+import { LoginComponent } from '../login/login.component';
+import { LoginService } from '../Services/login.service';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink, RouterOutlet, RouterLinkActive],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  id: string | null = null;
+
+  isloggedin: boolean = false;
+  constructor(private login: LoginService) {}
+  ngOnInit() {
+    this.login.isLoggedIn$.subscribe((status) => {
+      this.isloggedin = status;
+    });
+   
+  }
+}

@@ -3,24 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
-import { NgIf } from '@angular/common';
+import { LoginService } from './Services/login.service';
 
 @Component({
   selector: 'app-root',
-  imports: [
-    RouterOutlet,
-    HeaderComponent,
-    LoginComponent,
-    SignupComponent,
-    NgIf,
-  ],
+  imports: [HeaderComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
-  title = 'EventManagement';
-  flow: number = 0;
-  getflow(val: number) {
-    this.flow = val;
-  }
-}
+export class AppComponent {}

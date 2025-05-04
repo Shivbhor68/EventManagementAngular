@@ -5,10 +5,20 @@
     <p style="font-size: larger; color: #e91e63">Diamond Events</p>
   </div>
   <div class="linkes">
-    <a routerLink="/Event" routerLinkActive="active">Events</a>
+    <a
+      routerLink="/Event"
+      [routerLinkActiveOptions]="{ exact: true }"
+      routerLinkActive="active"
+      >Events</a
+    >
+    @if (isloggedin) {
     <a routerLink="Mybooking" routerLinkActive="active">My bookings</a>
     <a routerLink="Profile" routerLinkActive="active">Profile</a>
+
+    } @if (!isloggedin) {
+    <a routerLink="login" routerLinkActive="active">Sign in</a>
+
+    }
     <a routerLink="Aboutus" routerLinkActive="active">About us</a>
   </div>
 </div>
-<router-outlet></router-outlet>

@@ -21,7 +21,7 @@ h2 {
 }
 
 .event-card {
-    background-color: #1e1e1e;
+    background-color: #121212;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(233, 30, 99, 0.2);
@@ -32,6 +32,7 @@ h2 {
 
 .event-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(233, 30, 99, 0.4);
 }
 
 .event-card img {
@@ -73,5 +74,6 @@ h2 {
 }
 
 .book-btn:hover {
+   
     background-color: #ff4081;
 }

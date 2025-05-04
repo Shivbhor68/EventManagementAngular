@@ -2,33 +2,33 @@
   <div class="profile-card">
     <img src="logo.png" alt="Profile Picture" class="profile-img" />
 
-    <h2 class="name">Priya Mehta</h2>
-    <p class="role">Diamond Events Client</p>
+    <h2 class="name">{{ dbname }}</h2>
+    <p class="role">{{ role }}</p>
 
-    <form>
+    <form [formGroup]="profileForm" (ngSubmit)="update()">
       <label>
         Full Name:
-        <input type="text" value="Priya Mehta" />
+        <input type="text" formControlName="name" />
       </label>
 
       <label>
         Email Address:
-        <input type="email" value="priya@example.com" />
+        <input type="email" formControlName="email" />
       </label>
 
       <label>
         Phone Number:
-        <input type="text" value="9876543210" />
+        <input type="text" formControlName="mobile" />
       </label>
 
       <label>
         City:
-        <input type="text" value="Pune" />
+        <input type="text" formControlName="address" />
       </label>
 
       <label>
         Preferred Event Type:
-        <input type="text" value="Weddings, Corporate Events" />
+        <input type="text" formControlName="preferedeventtype" />
       </label>
 
       <label>

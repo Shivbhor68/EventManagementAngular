@@ -1,0 +1,15 @@
+div{
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 100px;
+    color: white;
+}
+p{
+    font-size: 20px;
+    color: white;
+}
