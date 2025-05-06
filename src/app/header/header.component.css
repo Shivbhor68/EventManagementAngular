@@ -7,9 +7,18 @@
 }
 
 .headerlogo{
-    height: 80px;
+    height: 45px;
    
 }
+
+.logoutbtn{
+        color: #e91e63;
+        background-color: black;
+        width: 57px;
+        
+        border: 1px solid white;
+        border-radius: 5px;
+    }
 
 .center{
     display: flex;

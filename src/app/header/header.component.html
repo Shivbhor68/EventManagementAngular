@@ -20,5 +20,9 @@
 
     }
     <a routerLink="Aboutus" routerLinkActive="active">About us</a>
+    @if (isloggedin) {
+    <button class="logoutbtn" (click)="logout()">Logout</button>
+
+    }
   </div>
 </div>

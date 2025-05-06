@@ -20,11 +20,15 @@ export class HeaderComponent {
   id: string | null = null;
 
   isloggedin: boolean = false;
-  constructor(private login: LoginService) {}
+  constructor(private login: LoginService, private route: Router) {}
   ngOnInit() {
     this.login.isLoggedIn$.subscribe((status) => {
       this.isloggedin = status;
     });
-   
+  }
+  logout() {
+    this.login.logout();
+    this.isloggedin = false;
+    this.route.navigate(['Event']);
   }
 }
